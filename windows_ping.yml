@@ -1,0 +1,8 @@
+---
+  - name: teste de ping no windows client
+    hosts: all
+    become: false
+    gather_facts: false
+    tasks:
+      - name: pingtest
+        win_ping:
